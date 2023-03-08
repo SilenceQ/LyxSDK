@@ -1,0 +1,144 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdk 28
+
+    defaultConfig {
+//        applicationId "com.laiyouxi.sdk"
+        minSdk 19
+        targetSdk 28
+        versionCode 1
+        versionName "1.0.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+//    publishing {
+//        publications {
+//            maven(MavenPublication) {
+//                groupId = 'com.laiyouxi.sdk'
+//                artifactId = 'lyxsdk'
+//                version = '1.0.0'
+//                from components.java
+//            }
+//        }
+//
+//        repositories {
+//            maven {
+//                // change to point to your repo, e.g. http://my.org/repo
+//                url = '../repo'
+//            }
+//        }
+//    }
+
+}
+
+dependencies {
+
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.4.2'
+    api "com.android.support:appcompat-v7:28.0.0"
+    api 'com.android.support:multidex:1.0.2'
+    api 'com.android.support:support-v4:28.0.0'
+    api 'com.android.support:recyclerview-v7:28.0.0'
+}
+
+apply plugin: 'maven-publish'
+
+    publishing {
+        publications {
+            maven(MavenPublication) {
+                groupId = 'com.laiyouxi.sdk'
+                artifactId = 'lyxsdk'
+                version = '1.0.0'
+//                from components.all
+//                配置上传源码
+//                artifact sourceJar {
+//                    classifier "sources"
+//                }
+            }
+        }
+
+        repositories {
+            maven {
+                allowInsecureProtocol = true
+                // change to point to your repo, e.g. http://my.org/repo
+                url = 'git@github.com:SilenceQ/LaiyouxiSDK.git'
+
+                credentials {
+                    username 'SilenceQ'
+                    password 'panqi19931104'
+                }
+            }
+        }
+    }
+
+//ext {
+//
+//// 从Github上clone下来的项目的本地地址
+//
+//    GITHUB_REPO_PATH = "/Users/macm1/Desktop/laiyouxi" //这里指定的就是刚刚新建项目后clone下来的在本地的路径
+//
+//    PUBLISH_GROUP_ID = 'com.laiyouxi.sdk'
+//
+//    PUBLISH_ARTIFACT_ID = 'lyxsdk'
+//
+//    PUBLISH_VERSION = '1.0.0'
+//
+//}
+//
+//
+//
+//uploadArchives {
+//
+//    repositories.mavenDeployer {
+//
+//        def deployPath = file(project.GITHUB_REPO_PATH)
+//
+//        repository(url: "file://${deployPath.absolutePath}")
+//
+//        pom.project {
+//
+//            groupId project.PUBLISH_GROUP_ID
+//
+//            artifactId project.PUBLISH_ARTIFACT_ID
+//
+//            version project.PUBLISH_VERSION
+//
+//        }
+//
+//    }
+//
+//}
+//
+//
+//// 源代码一起打包
+//
+//task androidSourcesJar(type: Jar) {
+//
+//    classifier = 'sources'
+//
+//    from android.sourceSets.main.java.sourceFiles
+//
+//}
+//
+//artifacts {
+//
+//    archives androidSourcesJar
+//
+//}
+
+
+//////// 打包发布配置结束 ////////

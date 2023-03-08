@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:id="@+id/tv_code1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/input_blue_bg"
+            android:gravity="center"
+            android:textColor="#00AAFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:id="@+id/tv_code2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/input_gray_bg"
+            android:gravity="center"
+            android:textColor="#00AAFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:id="@+id/tv_code3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/input_gray_bg"
+            android:gravity="center"
+            android:textColor="#00AAFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:id="@+id/tv_code4"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/input_gray_bg"
+            android:gravity="center"
+            android:textColor="#00AAFF"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:id="@+id/tv_code5"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/input_gray_bg"
+            android:gravity="center"
+            android:textColor="#00AAFF"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:id="@+id/tv_code6"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/input_gray_bg"
+            android:gravity="center"
+            android:textColor="#00AAFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ll_code"
+        android:layout_alignBottom="@+id/ll_code"
+        android:background="@android:color/transparent"
+        android:cursorVisible="false"
+        android:inputType="number"
+        android:textColor="@android:color/transparent" />
+</RelativeLayout>

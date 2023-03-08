@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="240dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@drawable/layout_corners_shape" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_corners_shape"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/cha"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/layout_circle_shape"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:gravity="right|center"
+                android:text="+86"
+                android:textColor="#999999"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/edittext_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:digits="0123456789"
+                android:gravity="left|center"
+                android:hint="请输入手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColorHint="#cccccc"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/layout_button_shape"
+            android:text="下一步"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button_agree"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/weixuanzhong"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/tv_agree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:text="已阅读并同意《来游戏用户协议》及《来游戏隐私政策》"
+                android:textColor="#999999"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:gravity="center"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:id="@+id/ll_real_container"
+        android:layout_width="290dp"
+        android:layout_height="300dp"
+        android:background="@drawable/layout_corners_shape"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:ignore="MissingDefaultResource">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_real_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="来游戏实名认证"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_auth_close"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fanhui" />
+
+            <TextView
+                android:id="@+id/tv_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="15dp"
+                android:text="帮助"
+                android:textColor="#00a2ff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:text="根据相关法律法规和主管部门要求，保护您的合法权益，我们需要获取您的姓名和身份信息进行实名认证。为了不影响您的产品体验，请尽快完善信息。"
+            android:textSize="13dp"
+            android:textColor="#565656"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/layout_real_shape"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:textColor="#999999"
+                android:text="姓名："
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+
+                android:background="@null"
+                android:drawableBottom="@drawable/bottom_line"
+                android:hint="输入真实姓名"
+                android:imeOptions="flagNoFullscreen|flagNavigateNext"
+                android:textColorHint="#bbbbbb"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/layout_real_shape"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="身份证："
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_identify"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+
+                android:background="@null"
+                android:drawableBottom="@drawable/bottom_line"
+                android:ems="18"
+                android:hint="输入身份证"
+                android:imeOptions="flagNoFullscreen|flagNavigateNext"
+                android:textColorHint="#bbbbbb"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="20dp">
+            <Button
+                android:id="@+id/iv_auth_back"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="放弃"
+                android:background="@drawable/layout_fq_button_shape"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#333333">
+
+            </Button>
+            <Button
+                android:id="@+id/bt_submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:padding="0dp"
+                android:text="立即认证"
+                android:background="@drawable/layout_button_shape"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

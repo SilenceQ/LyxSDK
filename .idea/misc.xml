@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.167" />
+        <entry key="app/src/main/res/drawable/bottom_line.xml" value="0.2685" />
+        <entry key="app/src/main/res/drawable/button_circle_shape.xml" value="0.264" />
+        <entry key="app/src/main/res/drawable/dialog_bg_round.xml" value="0.2685" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/input_blue_bg.xml" value="0.2685" />
+        <entry key="app/src/main/res/drawable/input_gray_bg.xml" value="0.1625" />
+        <entry key="app/src/main/res/drawable/layout_button_shape.xml" value="0.264" />
+        <entry key="app/src/main/res/drawable/layout_circle_shape.xml" value="0.264" />
+        <entry key="app/src/main/res/drawable/layout_corners_shape.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/layout_fq_button_shape.xml" value="0.283" />
+        <entry key="app/src/main/res/drawable/layout_message_shape.xml" value="0.1625" />
+        <entry key="app/src/main/res/drawable/layout_qq_shape.xml" value="0.264" />
+        <entry key="app/src/main/res/drawable/layout_real_shape.xml" value="0.283" />
+        <entry key="app/src/main/res/drawable/layout_right_shape.xml" value="0.264" />
+        <entry key="app/src/main/res/drawable/layout_send_message_button.xml" value="0.247" />
+        <entry key="app/src/main/res/drawable/layout_toast.xml" value="0.1435" />
+        <entry key="app/src/main/res/drawable/layout_toast_shape.xml" value="0.1435" />
+        <entry key="app/src/main/res/drawable/layout_weixin_shape.xml" value="0.264" />
+        <entry key="app/src/main/res/drawable/layout_white_shape.xml" value="0.1625" />
+        <entry key="app/src/main/res/layout-land/dialog_limit_tip.xml" value="0.23589065255731922" />
+        <entry key="app/src/main/res/layout-land/dialog_real_name.xml" value="0.43738656987295826" />
+        <entry key="app/src/main/res/layout-land/pop_count_time_tip.xml" value="0.23589065255731922" />
+        <entry key="app/src/main/res/layout-port/dialog_limit_tip.xml" value="0.2786458333333333" />
+        <entry key="app/src/main/res/layout-port/dialog_real_name.xml" value="0.5" />
+        <entry key="app/src/main/res/layout-port/layout_real_shape.xml" value="0.2786458333333333" />
+        <entry key="app/src/main/res/layout-port/pop_count_time_tip.xml" value="0.2786458333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.13134057971014493" />
+        <entry key="app/src/main/res/layout/countdown_time.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/dialog_anti_tip.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/dialog_realnamefail_tip.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/layout_corners.xml" value="0.25885416666666666" />
+        <entry key="app/src/main/res/layout/loginmessage_dialog.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/loginphone_dialog.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/payorder_dialog.xml" value="0.6278625954198473" />
+        <entry key="app/src/main/res/layout/toast_sure.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/verification_code.xml" value="0.153125" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.174" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1865" />
+        <entry key="lyxsdk/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
